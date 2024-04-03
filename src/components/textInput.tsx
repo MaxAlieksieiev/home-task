@@ -1,6 +1,6 @@
-import { TextField } from '@mui/material';
+import { TextField, StandardTextFieldProps } from '@mui/material';
 
-interface Props {}
+type Props = StandardTextFieldProps;
 
 export function TextInput(props: Props) {
   return <TextField variant='outlined' {...props} />;

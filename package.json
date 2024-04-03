@@ -17,9 +17,11 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router": "^6.22.3",
+    "react-router-dom": "^6.22.3",
     "yup": "^1.4.0"
   },
   "devDependencies": {
+    "normalize.css": "^8.0.1",
     "@types/node": "^20.2.5",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
