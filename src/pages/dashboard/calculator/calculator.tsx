@@ -3,6 +3,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { Button } from 'components/button';
 import { VaultService } from 'utils/vaultService';
 import { useHistoryOperations } from 'hooks/useHistoryOperations';
+import { Operation } from 'core/constants/common';
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const operations = ['+', '-', '/', '*'];
@@ -23,12 +24,12 @@ export function Calculator() {
   };
 
   useEffect(() => {
-    const currentOperation = VaultService.getItem('operation');
+    const currentOperation = VaultService.getItem(Operation);
     setInput(currentOperation);
   }, []);
 
   useEffect(() => {
-    VaultService.setItem('operation', input);
+    VaultService.setItem(Operation, input);
   }, [input]);
 
   return (

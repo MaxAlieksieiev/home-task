@@ -6,6 +6,7 @@ import { useMemo } from 'react';
 import { Header } from 'components/header';
 import { VaultService } from 'utils/vaultService';
 import { useHistoryOperations } from 'hooks/useHistoryOperations';
+import { History } from 'core/constants/common';
 
 const tabs = ['calculator', 'history'];
 
@@ -31,7 +32,7 @@ export function Dashboard() {
           onChange={(_e, value) => {
             navigate(value);
             if (value === 'history') {
-              VaultService.setItem('history', history);
+              VaultService.setItem(History, history);
             }
           }}
         >

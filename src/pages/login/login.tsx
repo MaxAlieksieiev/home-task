@@ -69,7 +69,7 @@ export function Login() {
           size='small'
           sx={{ padding: '8px', width: '100px', alignSelf: 'center' }}
           type='submit'
-          disabled={!formik.isValid}
+          disabled={!formik.isValid || !formik.dirty}
         />
       </Stack>
     </form>

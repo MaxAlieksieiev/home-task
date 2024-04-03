@@ -3,6 +3,9 @@ import { useNavigate } from 'react-router';
 import { Button } from './button';
 import { ReactNode } from 'react';
 import { useAuth } from 'hooks/useAuth';
+import { useHistoryOperations } from 'hooks/useHistoryOperations';
+import { VaultService } from 'utils/vaultService';
+import { Operation } from 'core/constants/common';
 
 interface Props {
   children: ReactNode;
@@ -11,9 +14,12 @@ interface Props {
 export function Header({ children }: Props) {
   const navigate = useNavigate();
   const { user, logout } = useAuth();
+  const { clearHistory } = useHistoryOperations();
 
   const logoutAction = () => {
     logout();
+    clearHistory();
+    VaultService.removeItem(Operation);
     navigate('/auth/login');
   };
 

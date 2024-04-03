@@ -1,6 +1,6 @@
 import { ReactNode, createContext, useEffect, useState } from 'react';
-import { VaultService } from '../utils/vaultService';
-import { User } from '../core/types/user';
+import { VaultService } from 'utils/vaultService';
+import { User } from 'core/types/user';
 
 type AuthContextType = {
   user: User | null;

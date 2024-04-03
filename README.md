@@ -1,30 +1,39 @@
-# React + TypeScript + Vite
+# Project Title
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Calculator Application with history
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+What things you need to install the software and how to install them:
 
-- Configure the top-level `parserOptions` property like this:
+- **Node.js**: You need Node.js to run the JavaScript code. This project requires Node.js version `18.12.0` or higher. You can download Node.js from [here](https://nodejs.org/).
+- **npm**: npm (Node Package Manager) is used to install dependencies. This project requires npm version `8.0.0` or higher. npm is included with Node.js, so if you have Node.js installed, you should have npm as well.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+To check the versions of Node.js and npm installed on your machine, run the following commands in your terminal:
+
+```bash
+node -v
+npm -v
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Installing
+
+Steps to set up the local development environment:
+
+```bash
+git clone git@github.com:MaxAlieksieiev/home-task.git
+cd home-task
+npm install
+```
+
+### Running
+
+In the project directory, you can run project by command:
+
+```bash
+npm run dev
+```

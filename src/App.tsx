@@ -7,8 +7,8 @@ import { Login } from 'pages/login/login';
 import { AuthLayout } from 'layouts/auth';
 import { Calculator } from 'pages/dashboard/calculator/calculator';
 import { History } from 'pages/dashboard/history/history';
-import './index.css';
 import { OperationHistoryProvider } from 'context/history';
+import './index.css';
 
 export function App() {
   return (
